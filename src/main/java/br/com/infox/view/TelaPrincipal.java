@@ -61,8 +61,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 conexao = ModuloConexao.conectar();
                 JasperPrint print = JasperFillManager.fillReport(getClass().getResourceAsStream("/reports/clientes.jasper"), null, conexao);
                 JasperViewer.viewReport(print, false);
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e);
+            } catch (Throwable e) {
+                JOptionPane.showMessageDialog(null, e.toString());
             } finally {
                 try {
                     conexao.close();
@@ -84,8 +84,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 conexao = ModuloConexao.conectar();
                 JasperPrint print = JasperFillManager.fillReport(getClass().getResourceAsStream("/reports/servicos.jasper"), null, conexao);
                 JasperViewer.viewReport(print, false);
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e);
+            } catch (Throwable e) {
+                JOptionPane.showMessageDialog(null, e.toString());
             } finally {
                 try {
                     conexao.close();
