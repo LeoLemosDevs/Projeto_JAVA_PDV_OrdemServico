@@ -9,7 +9,7 @@ Sistema OS é um sistema desktop(Windows, Linux ou MAC) para gestão de ordem de
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/rB66EC0VXTA?si=9q50jPzixgxcaGBc?style=social)
 ## Autor
-Professor José de Assis
+Leonardo Lemos (Adaptado do projeto original de Professor José de Assis)
 ## Instruções para instalação e uso do aplicativo
 ### Pré requisitos
 1) Ter o Java **versão 8** instalado (só funciona corretamente nesta versão do Java). 
