@@ -41,14 +41,7 @@
             <version>1.3.30</version>
         </dependency>
 
-        <!-- rs2xml local jar -->
-        <dependency>
-            <groupId>net.proteanit.sql</groupId>
-            <artifactId>rs2xml</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/rs2xml.jar</systemPath>
-        </dependency>
+        <!-- rs2xml removido, substituído por classe nativa TableModelUtil -->
 
         <!-- Atxy2k local jar -->
         <dependency>

@@ -29,7 +29,7 @@ import br.com.infox.model.ModuloConexao;
 import java.awt.HeadlessException;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import net.proteanit.sql.DbUtils;
+// Removido import do DbUtils
 
 /**
  * Tela de gestão de clientes
@@ -111,7 +111,7 @@ public class TelaCliente extends javax.swing.JInternalFrame {
             pst = conexao.prepareStatement(sql);
             pst.setString(1, txtCliPesquisar.getText() + "%");
             rs = pst.executeQuery();
-            tblClientes.setModel(DbUtils.resultSetToTableModel(rs));
+            tblClientes.setModel(TableModelUtil.resultSetToTableModel(rs));
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         } finally {

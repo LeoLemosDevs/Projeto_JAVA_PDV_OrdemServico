@@ -29,7 +29,7 @@ import java.awt.HeadlessException;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import net.proteanit.sql.DbUtils;
+// Removido import do DbUtils
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -65,7 +65,7 @@ public class TelaOS extends javax.swing.JInternalFrame {
             pst = conexao.prepareStatement(sql);
             pst.setString(1, txtCliPesquisar.getText() + "%");
             rs = pst.executeQuery();
-            tblClientes.setModel(DbUtils.resultSetToTableModel(rs));
+            tblClientes.setModel(TableModelUtil.resultSetToTableModel(rs));
         } catch (HeadlessException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         } finally {
