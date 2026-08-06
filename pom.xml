@@ -43,14 +43,7 @@
 
         <!-- rs2xml removido, substituído por classe nativa TableModelUtil -->
 
-        <!-- Atxy2k local jar -->
-        <dependency>
-            <groupId>Atxy2k</groupId>
-            <artifactId>CustomTextField</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/Atxy2k.jar</systemPath>
-        </dependency>
+        <!-- Atxy2k removido, substituído por classe nativa RestrictedTextField -->
     </dependencies>
 
     <build>

@@ -23,7 +23,7 @@
  */
 package br.com.infox.view;
 
-import Atxy2k.CustomTextField.RestrictedTextField;
+// Import removido do Atxy2k
 import java.sql.*;
 import br.com.infox.model.ModuloConexao;
 import java.awt.Color;
