@@ -12,22 +12,35 @@ import javax.swing.text.PlainDocument;
 public class RestrictedTextField {
     
     private final JTextField textField;
+    private int limit = -1;
+    private boolean onlyNums = false;
     
     public RestrictedTextField(JTextField textField) {
         this.textField = textField;
+        this.textField.setDocument(new RestrictedDocument());
     }
     
-    public void setLimit(final int limit) {
-        textField.setDocument(new PlainDocument() {
-            @Override
-            public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
-                if (str == null) {
-                    return;
-                }
-                if ((getLength() + str.length()) <= limit) {
-                    super.insertString(offs, str, a);
-                }
+    public void setLimit(int limit) {
+        this.limit = limit;
+    }
+    
+    public void setOnlyNums(boolean onlyNums) {
+        this.onlyNums = onlyNums;
+    }
+    
+    private class RestrictedDocument extends PlainDocument {
+        @Override
+        public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            if (str == null) {
+                return;
             }
-        });
+            if (onlyNums && !str.matches("\\d+")) {
+                return;
+            }
+            if (limit > 0 && (getLength() + str.length()) > limit) {
+                return;
+            }
+            super.insertString(offs, str, a);
+        }
     }
 }
