@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2021 Professor José de Assis.
+ * Copyright 2021 Leonardo Lemos.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +33,7 @@ import javax.swing.JOptionPane;
 /**
  * Autenticação do usuário
  *
- * @author Professor José de Assis
+ * @author Leonardo Lemos
  */
 public class TelaLogin extends javax.swing.JFrame {
 

@@ -1,15 +1,15 @@
-![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
+![GitHub](https://img.shields.io/github/license/LeoLemosDevs/infoX)
 
 # ☕ Java MySQL - Sistema OS
 Sistema OS é um sistema desktop(Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
 
-![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/sistemaOS.png)
+![sistemaOS](https://github.com/LeoLemosDevs/infox/blob/master/assets/sistemaOS.png)
 ### Demonstração do projeto
 [![Java MySQL Sistema OS](https://img.youtube.com/vi/rB66EC0VXTA/0.jpg)](https://youtu.be/rB66EC0VXTA?si=9q50jPzixgxcaGBc "Asssistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/rB66EC0VXTA?si=9q50jPzixgxcaGBc?style=social)
 ## Autor
-Leonardo Lemos (Adaptado do projeto original de Professor José de Assis)
+Leonardo Lemos (Desenvolvido por Leonardo Lemos)
 ## Instruções para instalação e uso do aplicativo
 ### Pré requisitos
 1) Ter o Java **versão 8** instalado (só funciona corretamente nesta versão do Java). 
@@ -23,15 +23,15 @@ Leonardo Lemos (Adaptado do projeto original de Professor José de Assis)
 ### Instalação do banco
 1) Iniciar os serviços Apache e MySQL no XAMPP, conforme indicado na imagem.
 
-![xampp start](https://github.com/professorjosedeassis/carometro/blob/main/assets/xampp1.png)
+![xampp start](https://github.com/LeoLemosDevs/carometro/blob/main/assets/xampp1.png)
 
 2) No navegador de internet digite: **localhost/dashboard** e selecione no menu: **phpMyAdmin** conforme indicado na imagem.
 
-![phpmyadmin](https://github.com/professorjosedeassis/carometro/blob/main/assets/xampp2.png)
+![phpmyadmin](https://github.com/LeoLemosDevs/carometro/blob/main/assets/xampp2.png)
 
 3) Crie um novo banco de dados de nome **dbinfox** conforme indicado na imagem.
 
-![dbinfox](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela1.png)
+![dbinfox](https://github.com/LeoLemosDevs/infox/blob/master/assets/infoxtela1.png)
 
 4) Na aba SQL, copie e cole o código abaixo e execute. (Passos 1,2 e 3 indicados na imagem)
 
@@ -41,17 +41,17 @@ insert into tbusuarios(iduser,usuario,login,senha,perfil) values(1,'Administrado
 create table tbclientes(idcli int primary key auto_increment,nomecli varchar(50) not null,endcli varchar(100),fonecli varchar(15) not null,emailcli varchar(50) unique);
 create table tbos(os int primary key auto_increment,data_os timestamp default current_timestamp,tipo varchar(15) not null,situacao varchar(20) not null,equipamento varchar(150) not null,defeito varchar(150),servico varchar(150),tecnico varchar(30),valor decimal(10,2),idcli int not null,foreign key(idcli) references tbclientes(idcli));
 ~~~
-![alunos](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela2.png)
+![alunos](https://github.com/LeoLemosDevs/infox/blob/master/assets/infoxtela2.png)
 
 ### Instalação do aplicativo
 1) Em Releases faça o download do arquivo **dist.zip**
 2) Descompactar e executar o arquivo **prjinfoX.jar** Verifique na tela de login o ícone que representa o banco de dados conectado. Se estiver com erro (conforme indicado na figura) verifique o XAMPP e revise novamente os passos 1 a 4 da instalação do banco.
 
-![app](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela3.png)
+![app](https://github.com/LeoLemosDevs/infox/blob/master/assets/infoxtela3.png)
 
 3) Se tudo estiver OK você pode iniciar fazendo o login com o usuário **admin** e a senha **admin** (esta senha pode ser alterada posteriormente). Ao logar o sistema direciona para tela principal onde podem ser cadastrados novos usuários, clientes e OS. O sistema permite também a emissão de relatórios.
 
-![aplicativo](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela4.png) 
+![aplicativo](https://github.com/LeoLemosDevs/infox/blob/master/assets/infoxtela4.png) 
 
 ## Tutorial passo a passo para desenvolver este projeto do "zero"
 Tecnologias que são abordadas neste tutorial:
@@ -81,7 +81,7 @@ Tecnologias que são abordadas neste tutorial:
 [Inno Setup](https://jrsoftware.org/isinfo.php)
 
 ### Slides
-[JDBC](https://professorjosedeassis.github.io/infox/)
+[JDBC](https://LeoLemosDevs.github.io/infox/)
 
 <hr>
 

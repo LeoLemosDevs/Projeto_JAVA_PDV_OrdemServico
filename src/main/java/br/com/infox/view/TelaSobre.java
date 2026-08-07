@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2021 Professor José de Assis.
+ * Copyright 2021 Leonardo Lemos.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,7 @@ import java.net.URISyntaxException;
 /**
  * Tela Sobre
  *
- * @author Professor José de Assis
+ * @author Leonardo Lemos
  */
 public class TelaSobre extends javax.swing.JFrame {
 
@@ -78,14 +78,14 @@ public class TelaSobre extends javax.swing.JFrame {
 
         jLabel1.setText("Sistema para gestão de serviços - Ver 1.3");
 
-        jLabel2.setText("@author Professor José de Assis");
+        jLabel2.setText("@author Leonardo Lemos");
 
         jLabel3.setText("Sob a licença MIT");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/mit.png"))); // NOI18N
 
         lblLink.setForeground(java.awt.SystemColor.textHighlight);
-        lblLink.setText("josedeassis.com.br");
+        lblLink.setText("leonardolemos.com");
         lblLink.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblLink.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,7 +132,7 @@ public class TelaSobre extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel2.getAccessibleContext().setAccessibleName("@author:  Professor José de Assis");
+        jLabel2.getAccessibleContext().setAccessibleName("@author:  Leonardo Lemos");
 
         pack();
         setLocationRelativeTo(null);
